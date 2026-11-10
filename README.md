@@ -5,6 +5,19 @@ An executable, **source-only recovery cookbook** for the **HP Spectre x360
 NVIDIA/MOK setup. Other models, firmware versions, layouts, and module-signing
 arrangements are intentionally rejected rather than guessed.
 
+## Related HP community report
+
+This repository aims to solve the `Could not create MokListRT: Volume Full` /
+`import_mok_state() failed: Volume Full` boot failure reported by an HP Spectre
+owner in [HP Community: BIOS reset](https://h30434.www3.hp.com/t5/Notebook-Boot-and-Lockup/BIOS-reset/td-p/9442525).
+That report describes Windows 10 / Ubuntu 24.04 dual-boot failing after an Ubuntu
+update. It has the same error messages, but does not identify the exact Spectre
+model or establish TPM-log exhaustion as its cause.
+
+**Our hardware testing was Ubuntu-only, without dual-boot.** Windows coexistence,
+BitLocker behavior, and recovery on the forum poster's laptop have not been tested;
+the matching symptoms are not a guarantee that this cookbook applies to it.
+
 ## What this does—and does not do
 
 The reference laptop stopped in shim 15.8 with `import_mok_state() failed:

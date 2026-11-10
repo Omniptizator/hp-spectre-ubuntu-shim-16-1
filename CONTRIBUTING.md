@@ -33,5 +33,4 @@ Temporary test data belongs outside the checkout. Source reproducibility is
 pinned; per-user keys, certificate serials, signing and toolchain differences mean
 signed binaries are not promised to be bit-for-bit reproducible.
 
-Use signed commits with a privacy-approved public identity. Git author/email and
-signing-key identifiers are public metadata. See [publishing](docs/publishing.md).
+Before sharing source or diagnostics, run the [publication privacy checks](docs/publishing.md).
