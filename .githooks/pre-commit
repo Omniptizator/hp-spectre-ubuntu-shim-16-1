@@ -1,0 +1,5 @@
+#!/bin/sh
+set -eu
+root=$(git rev-parse --show-toplevel)
+python3 -B "$root/scripts/check_public.py" --staged --history
+exec git diff --cached --check

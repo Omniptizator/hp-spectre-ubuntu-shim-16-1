@@ -1,0 +1,6 @@
+#!/bin/sh
+# Never sudo this entry point: build/sign as the invoking user.
+set -eu
+root=$(CDPATH= cd -- "$(dirname -- "$0")" && pwd)
+export PYTHONDONTWRITEBYTECODE=1
+exec /usr/bin/python3 -B "$root/scripts/cli.py" "$@"

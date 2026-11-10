@@ -1,0 +1,23 @@
+__pycache__/
+*.py[cod]
+.coverage
+.venv/
+# Runtime data belongs OUTSIDE this repository. These are defense in depth.
+keys/
+state/
+build/
+artifacts/
+backups/
+*.key
+*.pem
+*.der
+*.cer
+*.efi
+*.esl
+*.auth
+*.log
+*.fd
+*.jpg
+*.jpeg
+*.png
+*.tar*

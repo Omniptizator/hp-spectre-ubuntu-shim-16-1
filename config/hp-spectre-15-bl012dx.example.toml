@@ -1,0 +1,11 @@
+# Reference profile, not a machine configuration file to edit.
+model = "HP Spectre x360 15-bl012dx"
+product_name = "HP Spectre x360 Convertible 15-bl0XX"
+board = "82C1"
+bios = "F.42"
+ubuntu = "26.04"
+architecture = "x86_64"
+esp_directory = "EFI/shim16-cookbook"
+boot_label = "Shim16 cookbook"
+# The ESP device, boot number, GRUB configuration and MOK identity are local.
+# No usernames, private keys, disk UUIDs or fixed boot numbers belong here.

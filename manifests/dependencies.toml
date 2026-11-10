@@ -1,0 +1,8 @@
+# Explicitly installed only by prepare --install-dependencies.
+packages = [
+  "build-essential", "gcc-14", "binutils", "git", "gnupg", "openssl",
+  "sbsigntool", "efitools", "efibootmgr", "mokutil", "dos2unix",
+  "libefivar-dev", "libelf-dev", "libssl-dev", "uuid-dev",
+  "python3", "python3-cryptography", "python3-pefile", "python3-virt-firmware",
+  "qemu-system-x86", "ovmf", "patch", "pkg-config", "util-linux"
+]

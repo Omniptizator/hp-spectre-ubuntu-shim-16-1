@@ -1,0 +1,37 @@
+[shim]
+url = "https://github.com/rhboot/shim.git"
+tag = "16.1"
+commit = "afc49558b34548644c1cd0ad1b6526a9470182ed"
+signer = "B00B48BC731AA8840FED9FB0EED266B70F4FEF10"
+key_url = "https://keyserver.ubuntu.com/pks/lookup?op=get&search=0xB00B48BC731AA8840FED9FB0EED266B70F4FEF10"
+
+[gnu_efi]
+url = "https://github.com/rhboot/gnu-efi.git"
+commit = "dc7fd96f23d6b582416f672844362d776d175cf4"
+
+[canonical]
+# Extract from the installed Ubuntu shim; reject different embedded inputs.
+ca_sha256 = "ed1fe72cb9ca31c9af5b757afcd733323d675825032e6ced7fe1ae9eb767998c"
+vendor_dbx_sha256 = "a1f71621d6ae3a5fe99ffb1888442b3b2f22fff73c1c6d26fe42bcc7ac4da678"
+
+[factory]
+# Public, model/firmware-specific template hashes; not unique machine IDs.
+PK = "6195b48fa3ac0369b6c61cd087e22c781bc664260b9c9457238ef91c566be13a"
+KEK = "b8a7901ff9e10fd2adf08febaad95bb7f1910a21f73145c74618a6f252cc9208"
+db = "2589f46823cd71d1825b46b88defc6a56abd36098f2df26c344c5007dc168cc8"
+dbx = "9d1ae9179583bea1df91a12c4ab83937f21569024eea92e3476cd1707790703a"
+
+[[downloads]]
+name = "microsoft-uefi-ca-2011.der"
+url = "https://raw.githubusercontent.com/microsoft/secureboot_objects/3d762aecbaecd12402efd21ba89c8c7bd40da4bd/PreSignedObjects/DB/Certificates/MicCorUEFCA2011_2011-06-27.der"
+sha256 = "48e99b991f57fc52f76149599bff0a58c47154229b9f8d603ac40d3500248507"
+
+[[downloads]]
+name = "microsoft-dbx-20230509.auth"
+url = "https://git.mx-os.mx/RPMs/edk2/raw/commit/265c5f094246a1d49aaf1b7d2741c75572dca4d0/DBXUpdate-20230509.x64.bin"
+sha256 = "3e56c3d9e5b12edbd9e4006413d87fba099de1eba33d2bea566e742166cb366a"
+
+[[downloads]]
+name = "microsoft-dbx-20260402.auth"
+url = "https://raw.githubusercontent.com/microsoft/secureboot_objects/3d762aecbaecd12402efd21ba89c8c7bd40da4bd/PostSignedObjects/DBX/amd64/DBXUpdate.bin"
+sha256 = "2089e3125e611376cb44326b5765674255443b2484f88de97251939d18055f68"
